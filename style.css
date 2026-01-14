@@ -10,3 +10,167 @@
 body{
     font-family: "Poppins", sans-serif;
 }
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+/* shared css  */
+
+.d-flex{
+    display: flex;
+}
+.justify-content-b{
+    justify-content: space-between;
+}
+.align-items{
+    align-items: center;
+}
+
+
+.btn-primary{
+    border: 1px solid #E02C6D;
+    background-color: #E02C6D;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 41px;
+    transition: all .5s;
+}
+.btn-primary:hover{
+    background-color: transparent;
+    border: 1px solid #E02C6D;
+    color: #3A3A3A;
+}
+
+.btn-primary i{
+    margin-left: 10px;
+}
+
+
+/* main css */
+
+
+.top-nav{
+    padding: 80px 0;
+}
+
+
+
+.top-bar .logo h4{
+    font-size: 1.5rem;
+    color: #3A3A3A;
+}
+
+.main-menu ul{
+    gap: 34px;
+    list-style: none;
+}
+
+.main-menu ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color:#3A3A3A;
+    font-weight: 600;
+}
+
+
+.header-content{
+    padding: 50px 0;
+}
+
+
+.header-t-des h1{
+    font-size: 3.25rem;
+    color: #3A3A3A;
+    margin-bottom: 15px;
+}
+
+.header-t-des p{
+    font-weight: 600;
+    color: #3A3A3A;
+    max-width: 505px;
+    margin-bottom: 15px;
+}
+
+.header-t-des a{
+    margin-top: 15px;
+    display: inline-block;
+}
+
+
+
+.header-image {
+    background: url("./images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-position: bottom right;
+    background-size: contain;
+    padding: 20px;
+}
+
+.header-image img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* mobile device media  */
+
+@media screen and (max-width: 576px) {
+    .top-bar,
+    .main-menu ul{
+        flex-direction: column;
+    }
+    .main-menu ul{
+        margin-top: 20px;
+    }
+    .header-content{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+    .header-t-des{
+        text-align: center;
+    }
+    .header-t-des p{
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+/* dekstop device media  */
+
+@media screen and (min-width: 576px) and (max-width: 800px) {
+    .top-bar,
+    .main-menu ul,
+    .header-content{
+        flex-direction: column;
+    }
+    .main-menu ul{
+        margin-top: 20px;
+    }
+
+    .header-content{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+    .header-t-des{
+        text-align: center;
+    }
+    .header-t-des p{
+        margin: auto;
+    }
+}
+
+
