@@ -120,6 +120,25 @@ body{
 
 
 
+/* sponser section */
+
+.our-sponsers{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    border-top: 1px solid #C0CCDA;
+    border-bottom: 1px solid #C0CCDA;
+    padding: 35px 0;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* mobile device media  */
@@ -142,6 +161,12 @@ body{
     .header-t-des p{
         margin: auto;
     }
+    .our-sponsers{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 20px;
+        justify-items: center;
+    }
+   
 }
 
 
@@ -170,6 +195,12 @@ body{
     }
     .header-t-des p{
         margin: auto;
+    }
+
+    .our-sponsers{
+        grid-template-columns: repeat(3,1fr);
+        row-gap: 20px;
+        justify-items: center;
     }
 }
 
