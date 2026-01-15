@@ -189,6 +189,18 @@ body{
     line-height: 143%;
 }
 
+.collection-link{
+    text-align: right;
+    margin-top: 20px;
+}
+
+.collection-link a{
+    text-decoration: none;
+    color: #E02C6D;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-right: 30px;
+}
 
 
 
